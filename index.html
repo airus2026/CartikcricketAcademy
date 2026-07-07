@@ -27,7 +27,6 @@ body{
 }
 
 /* Background Image */
-
 .bg-image{
     position:fixed;
     top:0;
@@ -35,38 +34,32 @@ body{
     width:100%;
     height:100%;
     object-fit:cover;
-    object-position:center center;
+    object-position:center;
     z-index:-2;
 }
 
-/* Light overlay */
-
-
-
 /* Content */
-
 .container{
     width:90%;
     max-width:900px;
     padding:60px 40px;
     text-align:center;
-
     border-radius:20px;
-
-    color:white
-    ;
+    color:#fff;
 }
 
 h1{
     font-size:64px;
     color:#39ff14;
     margin-bottom:15px;
+    font-weight:700;
 }
 
 h2{
     font-size:24px;
     letter-spacing:6px;
     margin-bottom:30px;
+    color:#fff;
 }
 
 p{
@@ -83,7 +76,28 @@ p{
     color:#39ff14;
     font-size:24px;
     font-weight:600;
-    margin-bottom:40px;
+    margin-bottom:25px;
+}
+
+/* Phone Number */
+.phone{
+    margin-bottom:35px;
+}
+
+.phone a{
+    color:#39ff14;
+    text-decoration:none;
+    font-size:24px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.phone a:hover{
+    color:#fff;
+}
+
+.phone i{
+    margin-right:10px;
 }
 
 .subscribe{
@@ -129,7 +143,7 @@ p{
     height:55px;
     border:1px solid rgba(255,255,255,.5);
     border-radius:50%;
-    color:white;
+    color:#fff;
     margin:0 8px;
     font-size:22px;
     text-decoration:none;
@@ -139,15 +153,12 @@ p{
 .social a:hover{
     background:#39ff14;
     color:#000;
+    border-color:#39ff14;
 }
 
-.footer{
-    margin-top:35px;
-    color:#ddd;
-}
+
 
 /* Mobile */
-
 @media(max-width:768px){
 
 .container{
@@ -155,11 +166,12 @@ p{
 }
 
 h1{
-    font-size:40px;
+    font-size:42px;
 }
 
 h2{
     font-size:20px;
+    letter-spacing:3px;
 }
 
 p{
@@ -168,6 +180,11 @@ p{
 
 .launch{
     font-size:18px;
+    padding:15px 25px;
+}
+
+.phone a{
+    font-size:20px;
 }
 
 .subscribe input,
@@ -183,33 +200,38 @@ p{
 
 <body>
 
-<img src="55362090798_fe2d7f8b92_o.jpg" class="bg-image" alt="Background">
+<!-- Background Image -->
+<img src="55362090798_fe2d7f8b92_o.jpg" class="bg-image" alt="Cricket Background">
 
 <div class="overlay"></div>
 
 <div class="container">
 
-<h1>Cartik Cricket Academy</h1>
+    <h1>Cartik Cricket Academy</h1>
 
-<h2>COMING SOON</h2>
+    <h2>COMING SOON</h2>
 
-<p>
-We're building something exciting for cricket enthusiasts. Get ready for professional coaching, expert trainers, modern practice facilities, fitness programs, and a complete cricket learning experience.
-</p>
+    <p>
+        We're building something exciting for cricket enthusiasts.
+        Get ready for professional coaching, expert trainers,
+        modern practice facilities, fitness programs,
+        and a complete cricket learning experience.
+    </p>
 
-<div class="launch">Our Website Will Be Live Soon
-</div>
+    <div class="launch">
+        Our Website Will Be Live Soon
+    </div>
 
-<div class="subscribe">
-<input type="email" placeholder="Enter your email address">
-<button>Notify Me</button>
-</div>
-
-
-
-<div class="footer">
-© 2026 Cartik Cricket Academy. All Rights Reserved.
-</div>
+    <!-- Phone Number -->
+    <div class="phone">
+        <a href="tel:+44 07500757775">
+            <i class="fas fa-phone"></i>+4407500 757775
+        </a>
+    </div>
+    
+    <div class="footer">
+        © 2026 Cartik Cricket Academy. All Rights Reserved.
+    </div>
 
 </div>
 
