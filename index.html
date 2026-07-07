@@ -5,10 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cartik Cricket Academy | Coming Soon</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -17,79 +18,95 @@
 }
 
 body{
-    background:linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.82)),
-    url("https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1500&q=80");
-    background-size:cover;
-    background-position:center;
-    color:#fff;
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    text-align:center;
+    overflow:hidden;
+    position:relative;
 }
+
+/* Background Image */
+
+.bg-image{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center center;
+    z-index:-2;
+}
+
+/* Light overlay */
+
+
+
+/* Content */
 
 .container{
     width:90%;
-    max-width:850px;
-}
+    max-width:900px;
+    padding:60px 40px;
+    text-align:center;
 
-.logo{
-    font-size:60px;
-    margin-bottom:20px;
+    border-radius:20px;
+
+    color:white
+    ;
 }
 
 h1{
-    font-size:60px;
-    color:#3cff00;
-    margin-bottom:10px;
+    font-size:64px;
+    color:#39ff14;
+    margin-bottom:15px;
 }
 
 h2{
     font-size:24px;
-    letter-spacing:3px;
-    margin-bottom:25px;
+    letter-spacing:6px;
+    margin-bottom:30px;
 }
 
 p{
-    color:#ddd;
+    font-size:20px;
     line-height:1.8;
-    font-size:18px;
-    margin-bottom:40px;
+    margin-bottom:35px;
 }
 
-.launch-message{
+.launch{
     display:inline-block;
     padding:18px 35px;
-    border:2px solid #3cff00;
+    border:2px solid #39ff14;
     border-radius:50px;
-    color:#3cff00;
-    font-size:22px;
+    color:#39ff14;
+    font-size:24px;
     font-weight:600;
     margin-bottom:40px;
-    background:rgba(255,255,255,.05);
 }
 
 .subscribe{
     display:flex;
     justify-content:center;
+    gap:15px;
     flex-wrap:wrap;
-    gap:12px;
 }
 
 .subscribe input{
-    width:320px;
-    padding:15px;
+    width:350px;
+    padding:16px;
     border:none;
-    border-radius:30px;
+    border-radius:50px;
     outline:none;
+    font-size:16px;
 }
 
 .subscribe button{
-    padding:15px 30px;
+    padding:16px 35px;
     border:none;
-    border-radius:30px;
-    background:#3cff00;
+    border-radius:50px;
+    background:#39ff14;
     color:#000;
     font-weight:700;
     cursor:pointer;
@@ -101,28 +118,41 @@ p{
 }
 
 .social{
-    margin-top:35px;
+    margin-top:40px;
 }
 
 .social a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:55px;
+    height:55px;
+    border:1px solid rgba(255,255,255,.5);
+    border-radius:50%;
+    color:white;
+    margin:0 8px;
+    font-size:22px;
     text-decoration:none;
-    color:#fff;
-    font-size:26px;
-    margin:0 10px;
     transition:.3s;
 }
 
 .social a:hover{
-    color:#3cff00;
+    background:#39ff14;
+    color:#000;
 }
 
 .footer{
-    margin-top:40px;
-    color:#bbb;
-    font-size:14px;
+    margin-top:35px;
+    color:#ddd;
 }
 
+/* Mobile */
+
 @media(max-width:768px){
+
+.container{
+    padding:35px 20px;
+}
 
 h1{
     font-size:40px;
@@ -132,21 +162,30 @@ h2{
     font-size:20px;
 }
 
-.launch-message{
-    font-size:18px;
-    padding:15px 25px;
+p{
+    font-size:17px;
 }
 
-p{
-    font-size:16px;
+.launch{
+    font-size:18px;
 }
+
+.subscribe input,
+.subscribe button{
+    width:100%;
 }
+
+}
+
 </style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 </head>
+
 <body>
+
+<img src="55362090798_fe2d7f8b92_o.jpg" class="bg-image" alt="Background">
+
+<div class="overlay"></div>
 
 <div class="container">
 
@@ -158,21 +197,15 @@ p{
 We're building something exciting for cricket enthusiasts. Get ready for professional coaching, expert trainers, modern practice facilities, fitness programs, and a complete cricket learning experience.
 </p>
 
-<div class="launch-message">
-🚀 Our Website Will Be Live Soon
+<div class="launch">Our Website Will Be Live Soon
 </div>
 
 <div class="subscribe">
-<input type="email" placeholder="Enter your email">
+<input type="email" placeholder="Enter your email address">
 <button>Notify Me</button>
 </div>
 
-<div class="social">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-<a href="#"><i class="fab fa-whatsapp"></i></a>
-</div>
+
 
 <div class="footer">
 © 2026 Cartik Cricket Academy. All Rights Reserved.
